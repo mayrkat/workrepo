@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "workrepo"
+version = "0.1.0"
+description = ""
+authors = ["mayrkah <katharina.mayr@adidas.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "1.21"
+boto3 = "^1.21.34"
+findspark = "^2.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pylint = "^2.12.2"
+black = "^22.3.0"
+jupyter = "^1.0.0"
+sphinx = "^4.3.1"
+sphinx-rtd-theme = "^1.0.0"
+moto = {extras = ["s3", "sts"], version = "^3.1.4"}
+pytest-spark = "^0.6.0"
+chispa = "^0.9.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
